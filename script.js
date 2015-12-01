@@ -1,35 +1,25 @@
-var map = L.map('map').setView([51.505, -0.09], 13);
-var marker = L.marker([51.5, -0.09]).addTo(map);
-var circle = L.circle([51.508, -0.11], 500, {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5
-}).addTo(map);
+var map = L.map('map').setView([40.683505, -73.948776], 13); 
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'your.mapbox.project.id',
-    accessToken: 'your.mapbox.public.access.token'
-}).addTo(map);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', { 
+        maxZoom: 18, 
+        id: 'mapbox.streets' 
+    }).addTo(map); 
 
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
+L.marker([40.683505, -73.948776]).addTo(map) 
 
-function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
-}
+.bindPopup("<b>This is where I live!</b>").openPopup(); 
 
-map.on('click', onMapClick);
+L.marker([40.716484, -73.988723]).addTo(map) 
 
-var popup = L.popup();
+.bindPopup("<b>Best Doughnuts</b>").openPopup(); 
 
-function onMapClick(e) {
+var popup = L.popup(); 
+
+function onMapClick(e) { 
     popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
+        .setLatLng(e.latlng) 
+        .setContent("You clicked the map at " + e.latlng.toString()) 
+        .openOn(map); 
+    }
 
-map.on('click', onMapClick);
+map.on('click', onMapClick); 
