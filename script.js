@@ -1,7 +1,7 @@
 var map = L.map('map').setView([40.683505, -73.948776], 13); 
 
 var circleIcon = L.icon ({
-    iconUrl:'/assets/circle-pointer.png',
+    iconUrl:'./assets/circle-pointer.png',
 
     iconSize:     [40, 40],
     iconAnchor:   [20, 20],
