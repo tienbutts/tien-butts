@@ -6,12 +6,16 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
     }).addTo(map); 
 
 L.marker([40.683505, -73.948776]).addTo(map) 
-
-.bindPopup("<b>This is where I live!</b>").openPopup(); 
+.bindPopup("<b>Home</b>").openPopup(); 
 
 L.marker([40.716484, -73.988723]).addTo(map) 
+.bindPopup("<b>Doughnut Plant</b>").openPopup(); 
 
-.bindPopup("<b>Best Doughnuts</b>").openPopup(); 
+L.marker([40.726430, -73.984101]).addTo(map) 
+.bindPopup("<b>Big Gay Ice Cream</b>").openPopup(); 
+
+L.marker([40.722514, -73.985741]).addTo(map) 
+.bindPopup("<b>Big Gay IceCream</b>").openPopup(); 
 
 var popup = L.popup(); 
 
