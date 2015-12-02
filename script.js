@@ -13,41 +13,51 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         id: 'mapbox.streets' 
     }).addTo(map); 
 
-L.marker([40.683505, -73.948776], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Home</b>").openPopup(); 
 
-L.marker([40.716484, -73.988723], {icon: circleIcon}).addTo(map)
-.bindPopup("<b>Doughnut Plant</b>").openPopup(); 
+var doughnutPlant = L.marker([40.716484, -73.988723], {icon: circleIcon});
+doughnutPlant.bindPopup("<b>Doughnut Plant</b>");
+doughnutPlant.addTo(map);
 
-L.marker([40.726430, -73.984101], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Big Gay Ice Cream</b>").openPopup(); 
+var bigGay = L.marker([40.726430, -73.984101], {icon: circleIcon});
+bigGay.bindPopup("<b>Big Gay Ice Cream</b>"); 
+bigGay.addTo(map);
 
-L.marker([40.722514, -73.985741], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Double Down Saloon</b>").openPopup(); 
+var doubleDown = L.marker([40.722514, -73.985741], {icon: circleIcon});
+doubleDown.bindPopup("<b>Double Down Saloon</b>"); 
+doubleDown.addTo(map);
 
-L.marker([40.795429, -73.930289], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Costco: Harlem</b>").openPopup();
+var costcoHarlem = L.marker([40.795429, -73.930289], {icon: circleIcon});
+costcoHarlem.bindPopup("<b>Costco: Harlem</b>");
+costcoHarlem.addTo(map);
 
-L.marker([40.767276, -73.937568], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Costco: Astoria</b>").openPopup(); 
+var costcoAstoria = L.marker([40.767276, -73.937568], {icon: circleIcon});
+costcoAstoria.bindPopup("<b>Costco: Astoria</b>"); 
+costcoAstoria.addTo(map);
 
-L.marker([40.655620, -74.009233], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Costco: Brooklyn</b>").openPopup(); 
+var costcoBrooklyn = L.marker([40.655620, -74.009233], {icon: circleIcon});
+costcoBrooklyn.bindPopup("<b>Costco: Brooklyn</b>"); 
+costcoBrooklyn.addTo(map);
 
-L.marker([40.645556,-74.011944], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Sunset Park</b>").openPopup();  
+var sunsetPark = L.marker([40.645556,-74.011944], {icon: circleIcon});
+sunsetPark.bindPopup("<b>Sunset Park</b>");  
+sunsetPark.addTo(map);
 
-L.marker([40.765830, -73.833084], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Flushing</b>").openPopup(); 
+var flushing = L.marker([40.765830, -73.833084], {icon: circleIcon});
+flushing.bindPopup("<b>Flushing</b>"); 
+flushing.addTo(map);
 
-L.marker([40.714722,-73.997222], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Chinatown</b>").openPopup(); 
+var chinatown = L.marker([40.714722,-73.997222], {icon: circleIcon});
+chinatown.bindPopup("<b>Chinatown</b>"); 
+chinatown.addTo(map);
 
-L.marker([40.805187, -73.966378], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>The Heights</b>").openPopup(); 
+var theHeights = L.marker([40.805187, -73.966378], {icon: circleIcon});
+theHeights.bindPopup("<b>The Heights</b>"); 
+theHeights.addTo(map);
 
-L.marker([40.723833, -74.004279], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Black Tap</b>").openPopup(); 
+var blackTap = L.marker([40.723833, -74.004279], {icon: circleIcon});
+blackTap.bindPopup("<b>Black Tap</b>");
+blackTap.addTo(map);
 
-L.marker([40.714176, -73.986960], {icon: circleIcon}).addTo(map) 
-.bindPopup("<b>Ice & Vice</b>").openPopup(); 
+var iceVice = L.marker([40.714176, -73.986960], {icon: circleIcon});
+iceVice.bindPopup("<b>Ice & Vice</b>");
+iceVice.addTo(map);
