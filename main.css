@@ -4,16 +4,16 @@ body {
 	color: black;
 	text-decoration: none;
 	background-color: antiquewhite;
+	margin:0;
 }
 
 a {
 	text-decoration: none;
 }
 
-body {
-	margin:0;
+p {
+	font-size:14px;
 }
-
 
 /* Navigation Bar */
 nav {
@@ -47,37 +47,62 @@ nav.top ul li a {
 
 div.greeting {
 	position: relative;
-	font-size:5em;
+	font-size:2em;
 	margin: 0 auto;
-	height:800px;
+	height:362.9px;
 	width:600px;
-	top:200px;
+	vertical-align: middle;
 	text-align:center;
 
 }
 
 
 /* Home Page */
+div.portfolio {
+	width:800px;
+	margin:0 auto;
+}
+
+div.img1 {
+	background-color:aqua;
+	width:200px;
+	height:200px;
+	display:inline-block;
+	float:left;
+}
 
 /* Contact */
 
 /* Portfolio */
 
+
 /* About */
-#map {
+div#tien_photo, div#tien_about, div#map {
+	width:33.33%;
 	height:600px;
-	width:100%;
-	position:relative;
-	top:50px;
-	left:0px;
+	float:left;
+	margin-top:50px;
+}
+
+div#tien_about {
+	text-align:center;
+}
+
+div#tien_about p {
+	padding:10px 30px 10px 30px;
+}
+
+div#tien_photo {
+	background-image: url("./assets/tien.jpg");
+	background-size:100%;
 }
 
 /* Blog */
 
 /* Footer */
 footer {
-	margin:0;
-	vertical-align:baseline;
 	background-color:black;
-	height:200px;
+	color:antiquewhite;
+	float:left;
+	width:100%;
 }
