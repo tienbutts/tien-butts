@@ -3,20 +3,15 @@ body {
 	font-size: 1.5em;
 	color: black;
 	text-decoration: none;
+	background-color: antiquewhite;
 }
 
 a {
 	text-decoration: none;
 }
 
-#map {
-	height:100%;
-	width:100%;
-	position:fixed;
-	top:50px;
-	left:0px;
-}
 
+/* Navigation Bar */
 nav {
 	position:fixed;
 	top:0px;
@@ -32,3 +27,34 @@ nav.top a {
 	padding:0 20px;
 	margin-top:10px;
 	}
+
+/* Greeting */
+
+div.greeting {
+	position: relative;
+	font-size:5em;
+	margin: 0 auto;
+	height:300px;
+	width:600px;
+	top:200px;
+	text-align:center;
+
+}
+
+
+/* Home Page */
+
+/* Contact */
+
+/* Portfolio */
+
+/* About */
+#map {
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:50px;
+	left:0px;
+}
+
+/* Blog */
