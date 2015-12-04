@@ -3,9 +3,7 @@ body {
 	font-size: 1.5em;
 	color: black;
 	text-decoration: none;
-	background-color: antiquewhite;
-	margin:0;
-}
+	margin:0;}
 
 a {
 	text-decoration: none;
@@ -19,7 +17,7 @@ p {
 nav {
 	padding:50px 0;
 	background-color: black;
-	color:antiquewhite;
+	color:white;
 	width:100%;
 	text-align:center;
 }
@@ -30,6 +28,7 @@ nav.top h1 {
 
 nav.top ul {
 	margin:0 auto;
+	padding:0;
 }
 
 nav.top ul li {
@@ -38,7 +37,7 @@ nav.top ul li {
 }
 
 nav.top ul li a {
-	color:antiquewhite;
+	color:white;
 	font-size:.75em;
 	text-transform:uppercase;
 }
@@ -47,26 +46,28 @@ nav.top ul li a {
 
 div.greeting {
 	position: relative;
-	font-size:2em;
-	margin: 0 auto;
 	height:362.9px;
-	width:600px;
-	vertical-align: middle;
 	text-align:center;
-
+	line-height:362.9px;
+	font-size: 2em;
 }
 
 
 /* Home Page */
 div.portfolio {
-	width:800px;
+	width:927px;
+	height:927px;
 	margin:0 auto;
+	min-height:500px;
+	padding-bottom:50px;
+	;
 }
 
 div.img1 {
 	background-color:aqua;
-	width:200px;
-	height:200px;
+	width:30%;
+	height:30%;
+	margin:1.66%;
 	display:inline-block;
 	float:left;
 }
@@ -75,13 +76,19 @@ div.img1 {
 
 /* Portfolio */
 
-
 /* About */
+div.about_me {
+	height: 400px;
+	padding-bottom:50px;
+	border-bottom:1px solid #ddd;
+	max-width:927px;
+	margin:0 auto;
+}
+
 div#tien_photo, div#tien_about, div#map {
 	width:33.33%;
-	height:600px;
 	float:left;
-	margin-top:50px;
+	height:100%;
 }
 
 div#tien_about {
@@ -94,15 +101,35 @@ div#tien_about p {
 
 div#tien_photo {
 	background-image: url("./assets/tien.jpg");
-	background-size:100%;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color:black;
 }
 
 /* Blog */
 
 /* Footer */
+div.line {
+	max-width:927px;
+	height:1px;
+	background-color:#ddd;
+}
 footer {
-	background-color:black;
-	color:antiquewhite;
 	float:left;
 	width:100%;
+	padding:40px 0;
+	margin:0 auto;
+	max-width:927px;
+	display:block;
+}
+
+ul.footer-elements {
+	display:inline;
+	text-align:center;
+	margin:0 auto;
+}
+
+ul.footer-elements li {
+	float:left;
 }
