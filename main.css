@@ -50,33 +50,52 @@ div.greeting {
 	text-align:center;
 	line-height:362.9px;
 	font-size: 2em;
+    filter: alpha(opacity=0);
+  -webkit-transition: all .55s ease-in;
+  -moz-transition: all .55s ease-in;
+  -ms-transition: all .55s ease-in;
+  -o-transition: all .55s ease-in;
+  transition: all .55s ease-in;
+    }
+
+div.greeting[data-position="left"] { left: -20%; }
+div.greeting[data-position="right"] { right: -20%; }
+div.greeting[data-position="left"].viewed {
+  left: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
+div.greeting[data-position="right"].viewed {
+  right: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
 
 
 /* Home Page */
 div.portfolio {
-	width:927px;
-	height:927px;
+	width:950px;
 	margin:0 auto;
-	min-height:500px;
 	padding-bottom:50px;
+	overflow:auto;
 	;
 }
 
 div.img1, div.img2, div.img3 {
 	background-color:aqua;
-	width:31.66%;
-	height:30%;
+	width:300px;
+	height:300px;
 	display:inline-block;
 	margin-bottom:15px;
 }
 
 div.img2  {
-	margin-right:1.66%;
+	margin-right:15px;
 }
 
 div.img3 {
-	margin-left: 1.66%;
+	margin-left: 15px;
 }
 
 /* Contact */
@@ -88,7 +107,7 @@ div.about_me {
 	height: 400px;
 	padding-bottom:50px;
 	border-bottom:1px solid #ddd;
-	max-width:927px;
+	max-width:950px;
 	margin:0 auto;
 }
 
@@ -108,10 +127,11 @@ div#tien_about p {
 
 div#tien_photo {
 	background-image: url("./assets/tien.jpg");
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color:black;
+	background-color:white;
+	height:100%;
 }
 
 /* Blog */
@@ -136,4 +156,53 @@ ul.footer-elements li {
 	float:left;
 	list-style-type: none;
 	padding:0 30px;
+}
+
+/* Media Queries */
+@media only screen and (max-width:500px) {
+	nav {
+		padding:20px 0 30px 0;
+	}
+	nav.top h1 {
+		padding:20px 0 0 0;
+	}
+	nav.top ul li {
+		display:block;
+		font-size: .75em;
+	}
+	div.greeting {
+		font-size: 1em;
+		height:200px;
+		line-height: 200px;
+	}
+	div.portfolio {
+		width:100%;
+	}
+	div.img1, div.img2, div.img3 {
+		width:50%;
+		height:auto;
+		padding-top: 50%;
+		margin:0;
+		float:left;
+	}
+	div.about_me {
+		width:90%;
+		height:100%;
+		margin:0 20px 0 20px;
+	}
+	div#tien_photo, div#map, div#tien_about {
+		width:100%;
+		float:none;
+		height:500px;
+	}
+	div#tien_about{
+		height:100%;
+	}
+	footer {
+		width:285px;
+		margin:0 auto;
+	}
+	ul.footer-element {
+		padding:20px 0 20px 0;
+	}
 }
