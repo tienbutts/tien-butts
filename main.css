@@ -206,3 +206,39 @@ ul.footer-elements li {
 		padding:20px 0 20px 0;
 	}
 }
+
+@media only screen and (max-width:950px) {
+	nav.top {
+		width:100%;
+	}
+	div.portfolio {
+		width:100%;
+		padding:0 20px 0 20px;
+	}
+	div.img1, div.img2, div.img3 {
+		width:33.33%;
+		height:auto;
+		padding-top: 33.33%;
+		margin:0;
+		float:left;
+	}
+	div.about_me {
+		height:100%;
+		overflow: hidden;
+		margin:50px 20px 0 20px;
+	}
+	div#tien_photo, div#map, div#tien_about {
+		width:50%;
+		height:500px;
+	}
+	div#map {
+		width:100%;
+	}
+	footer {
+		width:285px;
+		margin:0 auto;
+	}
+	ul.footer-element {
+		padding:20px 0 20px 0;
+	}
+}
