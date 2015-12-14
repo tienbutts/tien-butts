@@ -19,15 +19,15 @@ nav {
 	background-image: url("./assets/Tien_header.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position:50% 50%;
-	opacity:.3;
-	color:white;
+	color:whiteTIen;
 	width:100%;
 	text-align:center;
 }
 
-nav.top h1 {
+div.logo {
 	padding:40px 0 90px 0;
+	background-image: url("./assets/Tien_logo.png");
+	background-size: 100%;
 }
 
 nav.top ul {
