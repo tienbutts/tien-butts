@@ -16,7 +16,11 @@ p {
 /* Navigation Bar */
 nav {
 	padding:50px 0;
-	background-color: black;
+	background-image: url("./assets/Tien_header.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:50% 50%;
+	opacity:.3;
 	color:white;
 	width:100%;
 	text-align:center;
@@ -43,6 +47,8 @@ nav.top ul li a {
 }
 
 /* Greeting */
+div.home {
+}
 
 div.greeting {
 	position: relative;
@@ -50,6 +56,7 @@ div.greeting {
 	text-align:center;
 	line-height:362.9px;
 	font-size: 2em;
+	opacity: 1;
     filter: alpha(opacity=0);
   -webkit-transition: all .55s ease-in;
   -moz-transition: all .55s ease-in;
@@ -57,6 +64,10 @@ div.greeting {
   -o-transition: all .55s ease-in;
   transition: all .55s ease-in;
     }
+
+div.greeting p {
+	opacity:1;
+}
 
 div.greeting[data-position="left"] { left: -20%; }
 div.greeting[data-position="right"] { right: -20%; }
